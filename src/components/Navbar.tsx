@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import MobileNavbar from './MobileNavbar'
@@ -9,8 +9,26 @@ const Navbar = (props: Props) => {
 
     const [navbar, setNavbar] = useState(false)
 
+    const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() =>{
+    const handleScroll = ( ) =>{
+      if (window.scrollY > 0){
+        setIsScrolled(true)
+      }
+      else{
+        setIsScrolled(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+
+    return () =>{
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
     return (
-        <div className='bg-transparent fixed top-0 w-full z-30 '>
+        <div className={` ${isScrolled ? 'bg-black' : 'bg-transparent'} fixed top-0 w-full z-30 `}>
             <div className=' flex items-center p-4 justify-between md:pt-6 lg:justify-around ' >
                 <div className='flex items-center'>
                     <div className='text-white lg:hidden cursor-pointer '>
