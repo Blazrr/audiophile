@@ -7,7 +7,6 @@
 
 @layer components {
     .navCard  {
-        @apply flex flex-col w-[90%]  mx-auto justify-center items-center space-y-4   bg-[#F1F1F1] relative rounded-2xl md:w-[2/5] pt-16 md:pt-14 p-4 
+        @apply flex flex-col w-[90%]  mx-auto justify-center items-center space-y-4   bg-[#F1F1F1] relative rounded md:w-[2/5] pt-16 md:pt-14 p-4 
     }
 }
-
