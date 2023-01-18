@@ -1,5 +1,6 @@
 import { AnimatePresence,motion } from 'framer-motion'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
     setNavbar: any
@@ -16,33 +17,35 @@ const MobileNavbar = ({setNavbar}: Props) => {
         >
 
             
-            <div className='navCard'>
-
+            <Link to="/Headphones" className='navCard' onClick={() => setNavbar(false)}>
+        
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px] flex items '>
                     <img src="/HeadphoneNavbar.svg" alt="" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide '>Headphones</span>
                 <button className='tracking-wider font-semibold text-[#979797] '>Shop</button>
-            </div>
+                
+
+            </Link>
 
 
-            <div className='navCard'>
+            <Link to="/Speakers" className='navCard' onClick={() => setNavbar(false)}>
 
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px]'>
                     <img src="/SpeakerNavbar.svg" alt="" className=' mx-auto' />
                 </div>
-                <span className='font-semibold tracking-wide'>Headphones</span>
+                <span className='font-semibold tracking-wide'>Speakers</span>
                 <button className=' font-semibold text-[#979797] tracking-wider'>Shop</button>
-            </div>
+            </Link>
 
 
-            <div className='navCard'>
+            <Link to="/Earphones" className='navCard' onClick={() => setNavbar(false)}>
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px]'>
                     <img src="/EarphonesNavbar.svg" alt="" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide'>Headphones</span>
                 <button className='tracking-wider font-semibold text-[#979797] '>Shop</button>
-            </div>
+            </Link>
 
         </motion.div>
 

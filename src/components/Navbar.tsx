@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineShoppingCart } from "react-icons/ai"
-import MobileNavbar from './MobileNavbar'
+import MobileNavbar from './Home/MobileNavbar'
 import { Link } from 'react-router-dom'
 type Props = {}
 
@@ -39,9 +39,9 @@ const Navbar = (props: Props) => {
                 <span className='text-white md:ml-8 md:hidden font-bold text-2xl'>audiophile</span>
                 <div className='space-x-4 text-white hidden lg:flex'>
                     <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >HOME</span> </Link>
-                    <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >HEADPHONES</span></Link>
-                    <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >SPEAKERS</span></Link>
-                    <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >EARPHONES</span></Link>
+                    <Link to="/Headphones">  <span className='hover:text-xl transition-all hover:text-orange-500' >HEADPHONES</span></Link>
+                    <Link to="/Speakers">  <span className='hover:text-xl transition-all hover:text-orange-500' >SPEAKERS</span></Link>
+                    <Link to="/Earphones">  <span className='hover:text-xl transition-all hover:text-orange-500' >EARPHONES</span></Link>
                 </div>
 
                 <div className='text-white '>
