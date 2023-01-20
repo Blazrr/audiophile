@@ -28,7 +28,7 @@ const Navbar = (props: Props) => {
   }, [])
 
     return (
-        <div className={` ${isScrolled ? 'bg-black' : 'bg-transparent'} fixed top-0 w-full z-30 `}>
+        <div className='bg-black  fixed top-0 w-full z-30 '>
             <div className=' flex items-center p-4 justify-between md:pt-6 lg:justify-around ' >
                 <div className='flex items-center'>
                     <div className='text-white lg:hidden cursor-pointer '>

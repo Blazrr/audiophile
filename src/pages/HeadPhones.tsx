@@ -1,14 +1,34 @@
-import React from 'react'
-import Header from '../components/Commons/Header'
+import React from "react";
+import Header from "../components/Commons/Header";
+import SeeProduct from "../components/Commons/SeeProduct";
+import {useSelector} from 'react-redux'
+import HomeHero from "../components/Home/HomeHero";
+import Footer from "../components/Footer";
+import HomeHeroFour from "../components/Home/HomeHeroFour";
 
-type Props = {}
+type Props = {};
 
 const HeadPhones = (props: Props) => {
+  const articles = useSelector((store: any) => {
+    return store.reducerArticles;
+  });
+
   return (
     <>
-        <Header pageTitle='HeadPhones'/>
-    </>
-  )
-}
+      <Header pageTitle="HeadPhones" />
+      <div className="space-y-8 ">
+      <SeeProduct title={articles[2].title} description={articles[2].description} img={articles[2].img} link="/Headphones/xx99m2"/>
+      <SeeProduct title={articles[1].title} description={articles[1].description} img={articles[1].img} link="/Headphones/xx99m1"/>
+      <SeeProduct title={articles[0].title} description={articles[0].description} img={articles[0].img} link="/Headphones/xx59"/>
+      <HomeHero/>
+      <HomeHeroFour/>
+      <Footer/>
+      </div>
 
-export default HeadPhones
+
+      
+    </>
+  );
+};
+
+export default HeadPhones;

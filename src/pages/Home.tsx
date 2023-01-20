@@ -6,10 +6,16 @@ import HomeHeroFour from '../components/Home/HomeHeroFour'
 import HomeHeroSpeaker from '../components/Home/HomeHeroSpeaker'
 import HomeHeroSpeakerTwo from '../components/Home/HomeHeroSpeakerTwo'
 import HomeHeroThree from '../components/Home/HomeHeroThree'
+import { useDispatch, useSelector } from "react-redux"
+
 
 type Props = {}
 
 const Home = (props: Props) => {
+  const articles = useSelector((store:any) => {return store.reducerArticles} )
+
+  console.log(articles)
+
   return (
     <>
       <HomeHeader />

@@ -1,12 +1,29 @@
 import React from 'react'
 import Header from '../components/Commons/Header'
+import SeeProduct from '../components/Commons/SeeProduct'
+import {useSelector} from 'react-redux'
+import HomeHero from '../components/Home/HomeHero'
+import Footer from '../components/Footer'
+import HomeHeroFour from '../components/Home/HomeHeroFour'
 
 type Props = {}
 
 const Speakers = (props: Props) => {
+  const articles = useSelector((store: any) => {
+    return store.reducerArticles;
+  });
   return (
     <>
         <Header pageTitle='Speakers'/>
+        <div className='space-y-8'>
+        <SeeProduct title={articles[4].title} description={articles[4].description} img={articles[4].img} link="/Speakers/zx9"   />
+        <SeeProduct title={articles[3].title} description={articles[3].description} img={articles[3].img} link="/Speakers/zx7"   />
+        <HomeHero/>
+        <HomeHeroFour/>
+        <Footer/>
+        </div>
+
+
     </>
   )
 }
