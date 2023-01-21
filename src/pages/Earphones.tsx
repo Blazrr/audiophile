@@ -12,6 +12,7 @@ const Earphones = (props: Props) => {
   const articles = useSelector((store: any) => {
     return store.reducerArticles;
   });
+  
   return (
     <>
         <Header pageTitle='Earphones'/>

@@ -3,13 +3,18 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import MobileNavbar from './Home/MobileNavbar'
 import { Link } from 'react-router-dom'
+import {useSelector} from "react-redux"
 type Props = {}
 
 const Navbar = (props: Props) => {
 
     const [navbar, setNavbar] = useState(false)
-
     const [isScrolled, setIsScrolled] = useState(false)
+    const articles = useSelector((store: any) => {
+      return store.reducerArticles;
+    });
+
+    // localStorage.setItem("articles", JSON.stringify(articles))
 
   useEffect(() =>{
     const handleScroll = ( ) =>{
