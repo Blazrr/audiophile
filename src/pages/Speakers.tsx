@@ -15,13 +15,13 @@ const Speakers = (props: Props) => {
   return (
     <>
         <Header pageTitle='Speakers'/>
-        <div className='space-y-8'>
+        <div className='space-y-8 max-w-[1300px] mx-auto'>
         <SeeProduct title={articles[4].title} description={articles[4].description} img={articles[4].img} link="/Speakers/zx9" direction='md:flex-row'   />
         <SeeProduct title={articles[3].title} description={articles[3].description} img={articles[3].img} link="/Speakers/zx7" direction='md:flex-row-reverse'   />
         <HomeHero/>
         <HomeHeroFour/>
-        <Footer/>
         </div>
+        <Footer/>
 
 
     </>

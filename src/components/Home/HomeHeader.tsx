@@ -5,7 +5,7 @@ type Props = {}
 
 const HomeHeader = (props: Props) => {
     return (
-        <div className='flex items-center justify-center lg:px-20 bg-[url("/HomeHeadphone.svg")] bg-no-repeat bg-cover bg-center h-[500px] lg:bg-none bg-black  '>
+        <div className='flex items-center justify-center lg:px-20 bg-[url("/HomeHeadphone.svg")] bg-no-repeat bg-cover bg-center h-[500px] lg:bg-none bg-[#191919]  '>
             <div className='flex flex-col space-y-6  '>
                 <h2 className='text-white text-center tracking-widest mb-32 md:mb-0 font-extralight lg:mb-0 lg:text-left'>
                     New Product
@@ -24,7 +24,7 @@ const HomeHeader = (props: Props) => {
             </div>
 
             <div className='hidden lg:block  '>
-                <img src="/HomeHeadphone.svg" alt="" className='max-h-[500px]' />
+                <img src="/xx99m2.svg" alt="" className='max-h-[500px]' />
             </div>
 
         </div>

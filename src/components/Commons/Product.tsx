@@ -20,7 +20,7 @@ const Product = ({
   article,
 }: Props) => {
   return (
-    <div className="w-4/5 mx-auto">
+    <div className="w-4/5 mx-auto mt-16">
       <div className="md:flex items-center justify-center">
         <img
           src={article.img}

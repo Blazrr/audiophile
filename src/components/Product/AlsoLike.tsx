@@ -15,9 +15,9 @@ const AlsoLike = ({ article }: Props) => {
       <div className="flex justify-center flex-col md:flex-row items-center space-y-10 w-4/5 mx-auto md:justify-between md:space-y-0 md:space-x-4 mt-4">
         {article.alsoLike.map((item, id) => {
           return (
-            <div key={id} className="">
-              <div className="bg-[#F1F1F1] flex justify-center rounded-md items-center p-16 aspect-square min-h-[300px]	 ">
-                <img src={item.img} alt=" " className="aspect-square" />
+            <div key={id} className="w-[30%] flex flex-col ">
+              <div className="bg-[#F1F1F1] flex justify-center rounded-md items-center p-8 aspect-square   ">
+                <img src={item.img} alt="" className="aspect-square" />
               </div>
               <h2 className="text-center text-xl mt-2 font-semibold">
                 {item.title}

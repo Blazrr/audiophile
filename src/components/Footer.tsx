@@ -9,10 +9,10 @@ const Footer = (props: Props) => {
         <div className='mt-16 bg-black text-white flex flex-col items-center p-8 space-y-8'>
             <h2 className='text-xl font-bold'>audiophile</h2>
             <div className='space-y-3 text-white flex flex-col mt-6 justify-center items-center  w-full md:flex-row md:space-y-0 md:space-x-5'>
-                <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >HOME</span> </Link>
-                <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >HEADPHONES</span></Link>
-                <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >SPEAKERS</span></Link>
-                <Link to="/">  <span className='hover:text-xl transition-all hover:text-orange-500' >EARPHONES</span></Link>
+                <Link to="/">  <span className=' transition-all hover:text-orange-500' >HOME</span> </Link>
+                <Link to="/">  <span className=' transition-all hover:text-orange-500' >HEADPHONES</span></Link>
+                <Link to="/">  <span className=' transition-all hover:text-orange-500' >SPEAKERS</span></Link>
+                <Link to="/">  <span className=' transition-all hover:text-orange-500' >EARPHONES</span></Link>
             </div>
             <p className='text-center text-sm font-extralight mt-8'>
                 Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted
@@ -24,9 +24,9 @@ const Footer = (props: Props) => {
                     Copyright 2021. All Rights Reserved
                 </span>
                 <div className='flex space-x-4 '>
-                   <a href=""> <AiFillFacebook className='h-8 w-8' /> </a> 
-                   <a href=""><AiFillTwitterSquare className='h-8 w-8' /> </a>
-                   <a href=""><AiOutlineInstagram className='h-8 w-8' /> </a>
+                   <a href=""> <AiFillFacebook className='h-8 w-8 hover:text-orange-500 transition-all' /> </a> 
+                   <a href=""><AiFillTwitterSquare className='h-8 w-8 hover:text-orange-500 transition-all' /> </a>
+                   <a href=""><AiOutlineInstagram className='h-8 w-8 hover:text-orange-500 transition-all' /> </a>
                 </div>
 
             </div>

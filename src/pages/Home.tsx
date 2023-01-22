@@ -18,12 +18,15 @@ const Home = (props: Props) => {
 
   return (
     <>
-      <HomeHeader />
+       <HomeHeader />
+    <div className='mx-auto max-w-[1300px]'>
       <HomeHero />
       <HomeHeroSpeaker/>
       <HomeHeroSpeakerTwo/>
       <HomeHeroThree/>
       <HomeHeroFour/>
+    </div>
+   
       <Footer/>
   
     </>

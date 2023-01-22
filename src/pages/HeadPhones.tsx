@@ -16,14 +16,14 @@ const HeadPhones = (props: Props) => {
   return (
     <>
       <Header pageTitle="HeadPhones" />
-      <div className="space-y-8 ">
+      <div className="space-y-8 max-w-[1300px] mx-auto ">
       <SeeProduct title={articles[2].title} description={articles[2].description} img={articles[2].img} link="/Headphones/xx99m2" direction="md:flex-row"/>
       <SeeProduct title={articles[1].title} description={articles[1].description} img={articles[1].img} link="/Headphones/xx99m1" direction="md:flex-row-reverse"/>
       <SeeProduct title={articles[0].title} description={articles[0].description} img={articles[0].img} link="/Headphones/xx59" direction="md:flex-row"/>
       <HomeHero/>
       <HomeHeroFour/>
-      <Footer/>
       </div>
+      <Footer/>
 
 
       

@@ -8,6 +8,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { reducerArticles } from "./Data/reducerArticles";
 import { Provider, useSelector } from "react-redux";
 import ProductPage from "./pages/ProductPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route element={<Speakers />} path="/Speakers" />
           <Route element={<Earphones />} path="/Earphones" />
           <Route path='/:pages/:article' element={<ProductPage />} />
+          <Route path="/Checkout" element={<CheckoutPage/>} />
         </Routes>
       </Provider>
     </>

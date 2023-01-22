@@ -28,7 +28,7 @@ const Cart = (props: Props) => {
   }, [articles]);
 
   return (
-    <motion.div className="absolute top-40 bg-white rounded-lg left-1/2 transform -translate-x-1/2 w-4/5 p-4 z-20"
+    <motion.div className="absolute top-40 bg-white rounded-lg  w-4/5 max-w-[500px] right-10   p-4 z-50"
      initial={{ opacity: 0 }}
      animate={{ opacity: 1}}
      exit={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const Cart = (props: Props) => {
                     <img
                       src={item.img}
                       alt=""
-                      className=" w-1/5 aspect-square bg-[#F1F1F1] p-6 rounded-md "
+                      className=" w-1/5 aspect-square bg-[#F1F1F1] p-2 rounded-md "
                     />
                     <div className="ml-4">
                       <p className="text-lg font-semibold ">

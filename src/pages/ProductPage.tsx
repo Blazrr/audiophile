@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { article } from "../../typing";
 import HomeHeroFour from "../components/Home/HomeHeroFour";
@@ -13,6 +13,7 @@ type Props = {};
 
 const ProductPage = (props: Props) => {
   const name = useParams().article;
+  console.log(name);
 
   const articles = useSelector((store: any) => {
     return store.reducerArticles;
@@ -21,7 +22,7 @@ const ProductPage = (props: Props) => {
   const tmp: article[] = articles.filter((item: article) => item.name == name);
   const article = tmp[0];
   const dispatch = useDispatch();
-  console.log(articles);
+  console.log(window.location.pathname) 
   const [count, setCount] = useState(0);
   const decrementCount = () => {
     setCount(count - 1);
@@ -41,9 +42,12 @@ const ProductPage = (props: Props) => {
     setCount(0);
   };
 
+
   return (
     <>
-      <div className="mt-24 max-w-[1100px] mx-auto">
+    {   article && window.location.pathname.includes(article.category) ?
+     <>
+        <div className=" max-w-[1300px] mx-auto">
         <Product
           count={count}
           incrementCount={incrementCount}
@@ -57,6 +61,12 @@ const ProductPage = (props: Props) => {
         <HomeHeroFour />
       </div>
       <Footer />
+      </>
+      :
+      <h1>erreur</h1>
+
+    }
+  
     </>
   );
 };

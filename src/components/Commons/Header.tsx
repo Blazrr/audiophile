@@ -8,9 +8,10 @@ type Props = {
 const Header = ({pageTitle}: Props) => {
   return (
     <>
-    <div className='bg-black h-[150px] text-white pt-24'>
-        <h1 className='text-center text-2xl font-bold' >
-            {pageTitle}
+    <hr  />
+    <div className='bg-[#191919]   text-white p-10'>
+        <h1 className='text-center text-2xl lg:text-4xl font-bold' >
+            {pageTitle.toUpperCase()}
         </h1>
     </div>
 

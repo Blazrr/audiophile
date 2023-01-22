@@ -16,10 +16,12 @@ const Earphones = (props: Props) => {
   return (
     <>
         <Header pageTitle='Earphones'/>
-        <SeeProduct title={articles[5].title} description={articles[5].description} img={articles[5].img} link="/Earphones/yx1" direction='md:flex-row'   />
+        <div className='max-w-[1300px] mx-auto'>
+        <SeeProduct title={articles[5].title} description={articles[5].description} img={articles[5].img} link="/Earphones/yx1" direction='md:flex-row'    />
         <HomeHero/> 
         <HomeHeroFour/>
-        <Footer/>
+        </div>
+        <Footer/>  
     </>
   )
 }
