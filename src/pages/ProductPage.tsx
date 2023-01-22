@@ -6,20 +6,22 @@ import HomeHeroFour from "../components/Home/HomeHeroFour";
 import Footer from "../components/Footer";
 import Product from "../components/Commons/Product";
 import HomeHero from "../components/Home/HomeHero";
+import Backgrounds from "../components/Product/Backgrounds";
+import AlsoLike from "../components/Product/AlsoLike";
 
 type Props = {};
 
 const ProductPage = (props: Props) => {
   const name = useParams().article;
-  
+
   const articles = useSelector((store: any) => {
     return store.reducerArticles;
   });
 
   const tmp: article[] = articles.filter((item: article) => item.name == name);
   const article = tmp[0];
-  const dispatch = useDispatch()
-console.log(articles);
+  const dispatch = useDispatch();
+  console.log(articles);
   const [count, setCount] = useState(0);
   const decrementCount = () => {
     setCount(count - 1);
@@ -32,37 +34,31 @@ console.log(articles);
   };
   const addToCart = () => {
     const data = {
-      count:count,
-      itemName: article.name
-    }
-    dispatch({type : "ADD_TO_CART" , payload :data });
-    setCount(0)
-  }
+      count: count,
+      itemName: article.name,
+    };
+    dispatch({ type: "ADD_TO_CART", payload: data });
+    setCount(0);
+  };
 
-console.log(article)
-  return <div className="mt-24">
-    {article.title}
-    <Product 
-   count={count} incrementCount={incrementCount} 
-    decrementCount={decrementCount} addToCart={addToCart}
-    article={article} />
-    <div className="flex w-4/5 mx-auto space-x-4 ">
-   
-       <div className="flex flex-col w-1/2 h-[400px] space-y-3">
-          <div className={`bg-[url("${article.bg1}")] h-1/2 rounded-lg bg-center`}></div>
-          <div className={`bg-[url("${article.bg2}")] h-1/2 rounded-lg bg-center`}></div>
-       </div>
-
-       <div className="w-1/2">
-        <div className={`bg-[url("${article.bg3}")] h-full rounded-lg bg-center bg-no-repeat bg-cover`}></div>
-       </div>
-
-    
-    </div>
-    <HomeHero/>
-    <HomeHeroFour/>
-    <Footer/>
-    </div>;
+  return (
+    <>
+      <div className="mt-24 max-w-[1100px] mx-auto">
+        <Product
+          count={count}
+          incrementCount={incrementCount}
+          decrementCount={decrementCount}
+          addToCart={addToCart}
+          article={article}
+        />
+        <Backgrounds article={article} />
+        <AlsoLike article={article} />
+        <HomeHero />
+        <HomeHeroFour />
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default ProductPage;

@@ -15,9 +15,14 @@ export const defaultArticles = [
       { text: "User Manual", number: "1" },
       { text: "3.5mm 5m Audio Cable", number: "1" },
     ],
-    bg1:"/xx99m1bg1.svg",
-    bg2:"/xx99m1bg2.svg",
-    bg3:"/xx99m1bg3.svg"
+    alsoLike: [
+      {title:"XX99 MARK II",img:"/xx99m2.svg", to:"/Headphones/xx99m2"},
+      {title:"XX99 MARK I",img:"/xx99m1.svg", to:"/Headphones/xx99m1"},
+      {title:"ZX9 SPEAKER",img:"/zx9.svg", to:"/Speaker/zx9"},
+    ],
+    bg1:"/xx59bg1.svg",
+    bg2:"/xx59bg2.svg",
+    bg3:"/xx59bg3.svg"
   },
   {
     name: "xx99m1",
@@ -34,6 +39,11 @@ export const defaultArticles = [
       { text: "Replacement Earcups", number: "2" },
       { text: "User Manual", number: "1" },
       { text: "3.5mm 5m Audio Cable", number: "1" },
+    ],
+    alsoLike: [
+      {title:"XX99 MARK II",img:"/xx99m2.svg", to:"/Headphones/xx99m2"},
+      {title:"XX59",img:"/xx59.svg", to:"/Headphones/xx59"},
+      {title:"ZX9 SPEAKER",img:"/zx9.svg", to:"/Speaker/zx9"},
     ],
     bg1:"/xx99m1bg1.svg",
     bg2:"/xx99m1bg2.svg",
@@ -55,10 +65,16 @@ export const defaultArticles = [
       { text: "Replacement Earcups", number: "2" },
       { text: "User Manual", number: "1" },
       { text: "3.5mm 5m Audio Cable", number: "1" },
+      { text: "Travel Bag", number: "1" },
     ],
-    bg1:"/xx99m1bg1.svg",
-    bg2:"/xx99m1bg2.svg",
-    bg3:"/xx99m1bg3.svg"
+    alsoLike: [
+      {title:"XX99 MARK I",img:"/xx99m1.svg", to:"/Headphones/xx99m1"},
+      {title:"XX59",img:"/xx59.svg", to:"/Headphones/xx59"},
+      {title:"ZX9 SPEAKER",img:"/zx9.svg", to:"/Speaker/zx9"},
+    ],
+    bg1:"/xx99m2bg1.svg",
+    bg2:"/xx99m2bg2.svg",
+    bg3:"/xx99m2bg3.svg"
   },
   {
     name: "zx7",
@@ -71,14 +87,20 @@ export const defaultArticles = [
     p1: "Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage. ",
     p2: "The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience. ",
     box: [
-      { text: "Headphone Unit", number: "1" },
-      { text: "Replacement Earcups", number: "2" },
+      { text: "Speaker Unit", number: "2" },
+      { text: "Speaker Cloth Panel", number: "2" },
       { text: "User Manual", number: "1" },
       { text: "3.5mm 5m Audio Cable", number: "1" },
+      { text: "7.5mm Optical Cable", number: "1" },
     ],
-    bg1:"/xx99m1bg1.svg",
-    bg2:"/xx99m1bg2.svg",
-    bg3:"/xx99m1bg3.svg"
+    alsoLike: [
+      {title:"ZX9 SPEAKER",img:"/zx9.svg", to:"/Speakers/zx9"},
+      {title:"XX99 MARK I",img:"/xx99m1.svg", to:"/Headphones/xx99m1"},
+      {title:"XX59 SPEAKER",img:"/xx59.svg", to:"/Headphones/xx59"},
+    ],
+    bg1:"/zx7bg1.svg",
+    bg2:"/zx7bg2.svg",
+    bg3:"/zx7bg3.svg"
   },
   {
     name: "zx9",
@@ -91,14 +113,20 @@ export const defaultArticles = [
     p1: "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).",
     p2: "Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.",
     box: [
-      { text: "Headphone Unit", number: "1" },
-      { text: "Replacement Earcups", number: "2" },
+      { text: "Speaker Unit", number: "2" },
+      { text: "Speaker Cloth Panel", number: "2" },
       { text: "User Manual", number: "1" },
       { text: "3.5mm 5m Audio Cable", number: "1" },
+      { text: "7.5mm Optical Cable", number: "1" },
     ],
-    bg1:"/xx99m1bg1.svg",
-    bg2:"/xx99m2bg2.svg",
-    bg3:"/xx99m2bg3.svg"
+    alsoLike: [
+      {title:"ZX7 SPEAKER",img:"/zx7.svg", to:"/Speaker/zx7"},
+      {title:"XX99 MARK I",img:"/xx99m1.svg", to:"/Headphones/xx99m1"},
+      {title:"XX59",img:"/xx59.svg", to:"/Headphones/xx59"},
+    ],
+    bg1:"/zx9bg1.svg",
+    bg2:"/zx9bg2.svg",
+    bg3:"/zx9bg3.svg"
   },
   {
     name: "yx1",
@@ -111,13 +139,19 @@ export const defaultArticles = [
     p1: "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.",
     p2: "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.",
     box: [
-      { text: "Headphone Unit", number: "1" },
-      { text: "Replacement Earcups", number: "2" },
+      { text: "Earphone Unit", number: "2" },
+      { text: "Multi-size Earplugs", number: "2" },
       { text: "User Manual", number: "1" },
-      { text: "3.5mm 5m Audio Cable", number: "1" },
+      { text: "USB-C Charging Cable", number: "1" },
+      { text: "Travel Pouch", number: "1" },
     ],
-    bg1:"/xx99m1bg1.svg",
-    bg2:"/xx99m1bg2.svg",
-    bg3:"/xx99m1bg3.svg"
+    alsoLike: [
+      {title:"XX99 MARK I",img:"/xx99m1.svg", to:"/Headphones/xx99m1"},
+      {title:"XX59",img:"/xx59.svg", to:"/Headphones/xx59"},
+      {title:"ZX9 SPEAKER",img:"/zx9.svg", to:"/Speaker/zx9"},
+    ],
+    bg1:"/yx1bg1.svg",
+    bg2:"/yx1bg2.svg",
+    bg3:"/yx1bg3.svg"
   },
 ];

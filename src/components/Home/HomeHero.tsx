@@ -11,7 +11,7 @@ const HomeHero = (props: Props) => {
             
             <Link to="Headphones" className='navCard'>
 
-                <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px] flex items '>
+                <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px] flex  '>
                     <img src="/HeadphoneNavbar.svg" alt="" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide '>Headphones</span>

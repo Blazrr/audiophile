@@ -12,7 +12,7 @@ const SeeProduct = ({title,description,img,link}: Props) => {
   return (
     <div className="flex flex-col w-4/5 mx-auto md:flex-row  justify-around ">
      
-      <img src={img} alt="" className="md:max-w-[700px]" />
+      <img src={img} alt="" className="" />
       <div className="flex flex-col items-center justify-center max-h-[700px] max-w-[700px]">
       <h3 className="tracking-widest text-orange-300 text-center font-semibold mt-4">
         NEW PRODUCT

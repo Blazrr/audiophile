@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
       return store.reducerArticles;
     });
 
-    // localStorage.setItem("articles", JSON.stringify(articles))
+    localStorage.setItem("articles", JSON.stringify(articles))
 
   useEffect(() =>{
     const handleScroll = ( ) =>{
