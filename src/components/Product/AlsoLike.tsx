@@ -16,8 +16,8 @@ const AlsoLike = ({ article }: Props) => {
         {article.alsoLike.map((item, id) => {
           return (
             <div key={id} className="">
-              <div className="bg-[#F1F1F1] flex justify-center rounded-md items-center p-16 md:min-h-[400px] ">
-                <img src={item.img} alt=" " className="" />
+              <div className="bg-[#F1F1F1] flex justify-center rounded-md items-center p-16 aspect-square min-h-[300px]	 ">
+                <img src={item.img} alt=" " className="aspect-square" />
               </div>
               <h2 className="text-center text-xl mt-2 font-semibold">
                 {item.title}

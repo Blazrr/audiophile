@@ -5,14 +5,15 @@ type Props = {
     title:string,
     description:string,
     img:string,
-    link:string
+    link:string,
+    direction:string
 };
 
-const SeeProduct = ({title,description,img,link}: Props) => {
+const SeeProduct = ({title,description,img,link, direction}: Props) => {
   return (
-    <div className="flex flex-col w-4/5 mx-auto md:flex-row  justify-around ">
+    <div className={`flex flex-col w-4/5 mx-auto ${direction}  justify-around `}>
      
-      <img src={img} alt="" className="" />
+      <img src={img} alt="" className="aspect-square" />
       <div className="flex flex-col items-center justify-center max-h-[700px] max-w-[700px]">
       <h3 className="tracking-widest text-orange-300 text-center font-semibold mt-4">
         NEW PRODUCT

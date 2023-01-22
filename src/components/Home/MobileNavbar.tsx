@@ -9,7 +9,6 @@ type Props = {
 const MobileNavbar = ({setNavbar}: Props) => {
     return (
         <>
-        <AnimatePresence>
         <motion.div className='flex flex-col md:flex-row md:space-x-8 pt-14 w:4/5 md:p-14 space-y-16 md:space-y-0 bg-white rounded-b-lg lg:hidden pb-8 md:pb-6 absolute top-16 w-full z-20'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1}}
@@ -48,9 +47,6 @@ const MobileNavbar = ({setNavbar}: Props) => {
             </Link>
 
         </motion.div>
-
-
-        </AnimatePresence>
                 <div className='top-16 absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-10 lg:hidden' onClick={() => setNavbar(false)}></div>
         </>
     )
