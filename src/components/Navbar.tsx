@@ -43,34 +43,30 @@ const Navbar = (props: Props) => {
               onClick={() => setNavbar(!navbar)}
             />
           </div>
-          <span className="text-white md:ml-16  lg:ml-0 hidden md:block font-bold text-3xl">
+          <Link to="/" className="text-white md:ml-16  lg:ml-0 hidden md:block font-bold text-3xl">
             audiophile
-          </span>
+          </Link>
         </div>
-        <span className="text-white md:ml-8 md:hidden font-bold text-2xl">
+        <Link to="/" className="text-white md:ml-8 md:hidden font-bold text-2xl">
           audiophile
-        </span>
+        </Link>
         <div className="space-x-4 text-white hidden lg:flex">
           <Link to="/">
-            {" "}
             <span className="hover:text-xl transition-all hover:text-orange-500">
               HOME
-            </span>{" "}
+            </span>
           </Link>
           <Link to="/Headphones">
-            {" "}
             <span className="hover:text-xl transition-all hover:text-orange-500">
               HEADPHONES
             </span>
           </Link>
           <Link to="/Speakers">
-            {" "}
             <span className="hover:text-xl transition-all hover:text-orange-500">
               SPEAKERS
             </span>
           </Link>
           <Link to="/Earphones">
-            {" "}
             <span className="hover:text-xl transition-all hover:text-orange-500">
               EARPHONES
             </span>
@@ -90,7 +86,7 @@ const Navbar = (props: Props) => {
       {cart && (
         <>
           <Cart />
-          <div className='top-16 absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-10 lg:hidden' onClick={() => setCart(false)}></div>
+          <div className='top-16 absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-10 ' onClick={() => setCart(false)}></div>
         </>
       )}
       </AnimatePresence>

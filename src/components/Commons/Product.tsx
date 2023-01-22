@@ -35,13 +35,13 @@ const Product = ({
           <p className="mt-4 font-bold">$ {article.price}</p>
 
           <div className="flex items-center space-x-3">
-            <div className="flex justify-around w-2/5 bg-slate-300 px-4 py-2">
-              <span onClick={decrementCount}>-</span>
+            <div className="flex justify-around w-2/5 bg-slate-300 px-4 py-2 min-w-[150px]">
+              <span onClick={decrementCount} className="cursor-pointer">-</span>
               {count}
-              <span onClick={incrementCount}>+</span>
+              <span onClick={incrementCount} className="cursor-pointer">+</span>
             </div>
             <button
-              className=" bg-orange-400  px-4 py-2 hover:bg-black text-white transition-all border-none md:mx-auto"
+              className=" bg-orange-400  px-4 py-2 hover:bg-black text-white transition-all border-none md:mx-auto min-w-[150px]"
               onClick={addToCart}
             >
               ADD TO CART

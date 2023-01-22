@@ -50,11 +50,11 @@ const Cart = (props: Props) => {
             {articles.map((item, id) => {
               return (
                 <div key={id} className="flex justify-between items-center space-x-6">
-                  <div className="flex items-center ">
+                  <div className="flex items-center w-full ">
                     <img
                       src={item.img}
                       alt=""
-                      className="w-2/5 aspect-square bg-[#F1F1F1] p-2 rounded-md "
+                      className=" w-1/5 aspect-square bg-[#F1F1F1] p-6 rounded-md "
                     />
                     <div className="ml-4">
                       <p className="text-lg font-semibold ">
@@ -64,8 +64,8 @@ const Cart = (props: Props) => {
                     </div>
                   </div>
 
-                  <div>
-                    <div className="flex justify-around bg-[#F1F1F1] px-4 py-2 min-w-[120px]">
+                  <div className="w-1/5">
+                    <div className="flex justify-around bg-[#F1F1F1] px-4 py-2 w-full">
                       <span
                         className="cursor-pointer"
                         onClick={() =>

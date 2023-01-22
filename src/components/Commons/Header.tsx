@@ -13,11 +13,7 @@ const Header = ({pageTitle}: Props) => {
             {pageTitle}
         </h1>
     </div>
-    <p  className=' p-10 text-slate-500 '>
-      <Link to=".." className='mt-16'>
-      Go back   
-        </Link> 
-    </p>
+
     </>
   )
 }
