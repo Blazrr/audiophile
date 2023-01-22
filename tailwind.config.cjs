@@ -6,9 +6,10 @@ module.exports = {
   ],
   extend:
     {
-      backgroundImage: {
-        'header': "url('/HomeHeadphone.svg')",
-      }
+      
     },
+    fontFamily:{
+      'Manrope':['Manrope', 'sans-serif']
+    }   ,
   plugins: [],
 }

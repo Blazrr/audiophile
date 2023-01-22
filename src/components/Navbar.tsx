@@ -18,9 +18,9 @@ const Navbar = (props: Props) => {
   const [cart, setCart] = useState(false);
   return (
     <>
-    <div className="bg-[#191919]  w-full z-40 ">
-      <div className=" flex items-center p-4 justify-between lg:justify-around ">
-        <div className="flex items-center p-2 md:p-6">
+    <div className="bg-[#191919]  w-full z-40 p-4 ">
+      <div className=" flex items-center  justify-between lg:justify-around ">
+        <div className="flex items-center p-2 ">
           <div className="text-white lg:hidden cursor-pointer ">
             <GiHamburgerMenu
               className="md:w-8 md:h-8 lg:w-10 lg:h-10 w-4 h-4"

@@ -20,12 +20,12 @@ const Product = ({
   article,
 }: Props) => {
   return (
-    <div className="w-4/5 mx-auto mt-16">
+    <div className="w-4/5 mx-auto ">
       <div className="md:flex items-center justify-center">
         <img
           src={article.img}
           alt=""
-          className="w-full bg-[#f1f1f1] rounded-lg p-4"
+          className="md:w-1/2 w-full bg-[#f1f1f1] rounded-lg p-16"
         />
 
         <div className="space-y-6 mt-6 md:p-8">
@@ -35,13 +35,13 @@ const Product = ({
           <p className="mt-4 font-bold">$ {article.price}</p>
 
           <div className="flex items-center space-x-3">
-            <div className="flex justify-around w-2/5 bg-slate-300 px-4 py-2 min-w-[150px]">
+            <div className="flex justify-around w-2/5 bg-slate-300 px-4 py-2 ">
               <span onClick={decrementCount} className="cursor-pointer">-</span>
               {count}
               <span onClick={incrementCount} className="cursor-pointer">+</span>
             </div>
             <button
-              className=" bg-orange-400  px-4 py-2 hover:bg-black text-white transition-all border-none md:mx-auto min-w-[150px]"
+              className=" bg-orange-400  px-4 py-2 hover:bg-black text-white transition-all border-none md:mx-auto "
               onClick={addToCart}
             >
               ADD TO CART

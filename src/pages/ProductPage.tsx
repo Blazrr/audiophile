@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { article } from "../../typing";
 import HomeHeroFour from "../components/Home/HomeHeroFour";
@@ -48,6 +48,11 @@ const ProductPage = (props: Props) => {
     {   article && window.location.pathname.includes(article.category) ?
      <>
         <div className=" max-w-[1300px] mx-auto">
+          <div className="w-4/5 mx-auto mt-8 font-semibold">
+          <Link to={article.category} className="text-[#787878]">Go Back</Link>
+
+          </div>
+
         <Product
           count={count}
           incrementCount={incrementCount}
