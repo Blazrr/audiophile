@@ -10,7 +10,7 @@ const HomeHeroSpeakerTwo = (props: Props) => {
           <div className='space-y-12'>
           <h3 className='font-bold text-2xl md:text-3xl'>ZX7 SPEAKER </h3>
           <div className='flex'>
-          <Link to='/' className='   px-4 py-2 hover:bg-black hover:text-white transition-all border-slate-700 border-[1px] md:mx-auto'>
+          <Link to='/Speakers/zx7' className='   px-4 py-2 hover:bg-black hover:text-white transition-all border-slate-700 border-[1px] md:mx-auto'>
             SEE PRODUCT
           </Link>
           </div>

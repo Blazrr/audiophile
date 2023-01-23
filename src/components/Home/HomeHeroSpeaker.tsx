@@ -20,7 +20,7 @@ const HomeHeroSpeaker = (props: Props) => {
         Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
       </p>
       <div className='flex'>
-        <Link to="/" className='text-white bg-black lg:text-left mx-auto mt-4 px-4 py-2 hover:bg-orange-700 transition-all lg:mx-0'>
+        <Link to="/Speakers/zx9" className='text-white bg-black lg:text-left mx-auto mt-4 px-4 py-2 hover:bg-orange-700 transition-all lg:mx-0'>
           SEE PRODUCT
         </Link>
       </div>

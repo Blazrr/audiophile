@@ -42,6 +42,9 @@ const ProductPage = (props: Props) => {
     setCount(0);
   };
 
+  console.log(article.category);
+  console.log(article);
+  console.log(window.location.pathname)
 
   return (
     <>

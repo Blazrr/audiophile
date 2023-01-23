@@ -17,7 +17,7 @@ const HomeHeader = (props: Props) => {
                     Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
                 <div className='flex'>
-                    <Link to="/" className='text-white bg-orange-500 lg:text-left mx-auto mt-4 px-4 py-2 hover:bg-orange-700 transition-all lg:mx-0'>
+                    <Link to="/Headphones/xx99m2" className='text-white bg-orange-500 lg:text-left mx-auto mt-4 px-4 py-2 hover:bg-orange-700 transition-all lg:mx-0'>
                         SEE PRODUCT
                     </Link>
                 </div>
