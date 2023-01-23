@@ -28,9 +28,9 @@ const CheckoutPage = (props: Props) => {
 
   return (
     <>
-    <div className="mt-32">
+    <div className="mt-32 ">
 
-      <div className="p-4 bg-white w-4/5 rounded-lg mx-auto">
+      <div className="p-4 bg-[#cfcfcf] w-4/5 rounded-lg mx-auto">
         <h2 className="text-xl font-bold tracking-widest	">SUMMARY</h2>
         <div className="space-y-4 mt-4">
           {articles.map((item, id) => {
@@ -59,6 +59,16 @@ const CheckoutPage = (props: Props) => {
               </div>
             );
           })}
+          <div className="flex justify-between">
+            <p>
+              Total
+            </p>
+          <p>
+          {totalPrice}
+          </p>
+
+
+          </div>
         </div>
       </div>
     </div>

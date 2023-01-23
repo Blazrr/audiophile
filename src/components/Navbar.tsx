@@ -18,7 +18,7 @@ const Navbar = (props: Props) => {
   const [cart, setCart] = useState(false);
   return (
     <>
-    <div className="bg-[#191919]  w-full z-40 p-4 ">
+    <div className="bg-[#191919]  w-full z-10 p-4 ">
       <div className=" flex items-center  justify-between lg:justify-around ">
         <div className="flex items-center p-2 ">
           <div className="text-white lg:hidden cursor-pointer ">
@@ -27,30 +27,30 @@ const Navbar = (props: Props) => {
               onClick={() => setNavbar(!navbar)}
             />
           </div>
-          <Link to="/" className="text-white md:ml-16  lg:ml-0 hidden md:block font-bold text-3xl ">
+          <Link to="/" className="text-white md:ml-16  lg:ml-0 hidden md:block font-bold text-3xl " onClick={() => setCart(false)}>
             audiophile
           </Link>
         </div>
-        <Link to="/" className="text-white md:ml-8 md:hidden font-bold text-2xl ">
+        <Link to="/" className="text-white md:ml-8 md:hidden font-bold text-2xl" onClick={() => setCart(false)}>
           audiophile
         </Link>
         <div className="space-x-4 text-white hidden lg:flex">
-          <Link to="/">
+          <Link to="/" onClick={() => setCart(false)}>
             <span className=" transition-all hover:text-orange-500 md:text-xl">
               HOME
             </span>
           </Link>
-          <Link to="/Headphones">
+          <Link to="/Headphones" onClick={() => setCart(false)}>
             <span className="transition-all hover:text-orange-500 md:text-xl">
               HEADPHONES
             </span>
           </Link>
-          <Link to="/Speakers">
+          <Link to="/Speakers" onClick={() => setCart(false)}>
             <span className=" transition-all hover:text-orange-500 md:text-xl">
               SPEAKERS
             </span>
           </Link>
-          <Link to="/Earphones">
+          <Link to="/Earphones" onClick={() => setCart(false)}>
             <span className=" transition-all hover:text-orange-500 md:text-xl">
               EARPHONES
             </span>
@@ -70,8 +70,8 @@ const Navbar = (props: Props) => {
       <AnimatePresence>
       {cart && (
         <>
-          <Cart />
-          <div className='absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-30 ' onClick={() => setCart(false)}></div>
+          <Cart cartFalse={() => setCart(false)}/>
+          <div className='absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-20 ' onClick={() => setCart(false)}></div>
         </>
       )}
       </AnimatePresence>
