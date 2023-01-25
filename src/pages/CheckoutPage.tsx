@@ -18,14 +18,14 @@ const CheckoutPage = (props: Props) => {
 
 
   return (
-    <>
-    <div className="w-4/5 mx-auto lg:flex lg:space-x-8 mt-8"> 
+    <div className="bg-[#f1f1f1]">
+    <div className="w-4/5 mx-auto lg:flex lg:space-x-8 pt-8 space-y-6 lg:space-y-0 "> 
     <Billing test={test} />
     <Summary articles={articles} />   
     </div>
      
     <Footer/>
-    </>
+    </div>
   );
 };
 

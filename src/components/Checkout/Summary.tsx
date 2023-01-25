@@ -21,7 +21,7 @@ const Summary = ({ articles }: Props) => {
     totalItems();
   }, [articles]);
   return (
-    <div className="space-y-4 bg-slate-200 p-8 rounded-lg">
+    <div className="space-y-4 bg-white p-8 rounded-lg">
       <h2 className="text-xl font-bold tracking-widest">SUMMARY</h2>
 
       {articles.map((item, id) => {
@@ -63,6 +63,7 @@ const Summary = ({ articles }: Props) => {
         <p>GRAND TOTAL</p>
         <p>$ 5,4446</p>
       </div>
+      <input type="submit" />
     </div>
   );
 };
