@@ -15,9 +15,9 @@ const SeeProduct = ({ title, description, img, link, direction }: Props) => {
       <img
         src={img}
         alt=""
-        className="aspect-square bg-[#f0f0f0] rounded-lg  md:w-1/2 w-full p-8  "
+        className=" bg-[#f0f0f0] rounded-lg  md:w-1/2 w-full p-4 md:p-8 object-scale-down "
       />
-      <div className="flex flex-col items-center justify-center mkd:w-1/2 w-full p-10">
+      <div className="flex flex-col items-center justify-center md:w-1/2 w-full p-10">
         <h3 className="tracking-widest text-orange-300 text-center font-semibold mt-4">
           NEW PRODUCT
         </h3>
