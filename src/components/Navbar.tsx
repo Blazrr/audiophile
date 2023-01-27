@@ -71,7 +71,7 @@ const Navbar = (props: Props) => {
       {cart && (
         <>
           <Cart cartFalse={() => setCart(false)}/>
-          <div className='absolute w-screen bg-slate-300 bg-opacity-25 h-[3000vh] z-20 ' onClick={() => setCart(false)}></div>
+          <div className='fixed w-screen bg-slate-300 bg-opacity-25 h-full top-0 overflow-auto  z-20 justify-center ' onClick={() => setCart(false)}></div>
         </>
       )}
       </AnimatePresence>

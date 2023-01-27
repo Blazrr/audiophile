@@ -28,7 +28,7 @@ const SeeProduct = ({ title, description, img, link, direction }: Props) => {
         <div className="mt-4 flex justify-center">
           <Link
             to={link}
-            className=" px-6  py-2 bg-[#D87D4A] hover:bg-black hover:text-black border-none text-white transition-all border-slate-700 border-[1px] md:mx-auto "
+            className=" px-6  py-2 bg-[#D87D4A] hover:bg-transparent  border-none hover:bg-orange-400  text-white transition-all border-slate-700  md:mx-auto "
           >
             SEE PRODUCT
           </Link>

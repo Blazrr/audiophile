@@ -45,7 +45,7 @@ const CheckoutPage = ({}: Props) => {
       {orderConfirmed && (
         <>
           <div
-            className="absolute w-screen bg-slate-300 bg-opacity-25 h-screen z-20 " ></div>
+            className="fixed w-screen bg-slate-300 bg-opacity-25 h-full top-0 overflow-auto  z-20 justify-center  " ></div>
 
           <ConfirmedOrder articles={articles} total={totalPrice} />
         </>
