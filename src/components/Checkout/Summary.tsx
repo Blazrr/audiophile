@@ -3,29 +3,19 @@ import { article } from "../../../typing";
 
 type Props = {
   articles: article[];
+  total:number
 };
 
-const Summary = ({ articles }: Props) => {
-  const [totalPrice, setTotalPrice] = useState(0);
-  const totalItems = () => {
-    let res = 0;
-    for (let i = 0; i < articles.length; i++) {
-      for (let j = 0; j < articles[i].qty; j++) {
-        res += articles[i].price;
-      }
-    }
-    setTotalPrice(res);
-  };
+const Summary = ({ articles,total }: Props) => {
 
-  useEffect(() => {
-    totalItems();
-  }, [articles]);
   return (
+    <div>
     <div className="space-y-4 bg-white p-8 rounded-lg">
       <h2 className="text-xl font-bold tracking-widest">SUMMARY</h2>
 
       {articles.map((item, id) => {
         return (
+          
           <div key={id} className="flex justify-between items-center ">
             <div className="flex items-center w-1/5 max-w-[300px] ">
               <img
@@ -49,7 +39,7 @@ const Summary = ({ articles }: Props) => {
       })}
       <div className="flex justify-between">
         <p>TOTAL</p>
-        <p>$ {totalPrice}</p>
+        <p>$ {total}</p>
       </div>
       <div className="flex justify-between">
         <p>SHIPPING</p>
@@ -57,13 +47,17 @@ const Summary = ({ articles }: Props) => {
       </div>
       <div className="flex justify-between">
         <p>VAT (INCLUDED)</p>
-        <p>$ {totalPrice / 5}</p>
+        <p>$ {total / 5}</p>
       </div>
       <div className="flex justify-between">
         <p>GRAND TOTAL</p>
         <p>$ 5,4446</p>
       </div>
-      <input type="submit" />
+      <button type="submit" className='px-4 flex py-2 hover:bg-transparent text-white transition-all hover:text-black border-slate-700 border-[1px] md:mx-auto bg-[#D87D4A]' >
+          CONTINUE & PAY
+        </button>
+
+    </div>
     </div>
   );
 };

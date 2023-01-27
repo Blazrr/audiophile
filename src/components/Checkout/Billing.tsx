@@ -2,26 +2,19 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 type Props = {
-  test: any;
+  register: any;
+  errors:any,
+
 };
 
-const Billing = ({ test }: Props) => {
+const Billing = ({ register, errors }: Props) => {
   const [isCash, setIsCash] = useState(true);
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data: any) => {
-    console.log(data);
-    test();
-  };
+
   console.log(isCash);
 
   return (
-    <div className="bg-white lg:w-full rounded-lg p-4  ">
+    <div className="bg-white lg:w-full rounded-lg p-4   ">
       <h2 className="text-xl font-bold tracking-widest ">Checkout</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
         <h3 className="text-[#D87D4A]">Billing details</h3>
         <div className="flex space-x-4">
           <div className="flex flex-col w-1/2">
@@ -102,6 +95,7 @@ const Billing = ({ test }: Props) => {
               name="Method"
               onClick={() => setIsCash(false)}
               className="rounded-md p-2 border-[1px] border-slate-200"
+              {...register("method", { required: true })}
             />
             <label htmlFor="">e-Money</label>
           </div>
@@ -111,12 +105,14 @@ const Billing = ({ test }: Props) => {
               value="cash"
               name="Method"
               onClick={() => setIsCash(true)}
-              checked
+              {...register("method", { required: true })}
               className="rounded-md p-2 border-[1px] border-slate-200"
             />
             <label htmlFor="">cash</label>
+            {errors.method && <p>Please select a Payment Method</p>}
           </div>
         </div>
+
 
         {!isCash && (
           <div className="flex space-x-4">
@@ -137,11 +133,10 @@ const Billing = ({ test }: Props) => {
                 className="rounded-md p-2 border-[1px] border-slate-200"
               />
             </div>
+           
           </div>
         )}
 
-        <input type="submit" />
-      </form>
     </div>
   );
 };

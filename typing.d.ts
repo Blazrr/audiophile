@@ -23,3 +23,7 @@ interface box {
     text:string,
     number:number
 }
+
+interface index {
+    [key: number]: string;
+}

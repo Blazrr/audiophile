@@ -4,6 +4,7 @@ import _ from "lodash";
 import { article } from "../../typing";
 
 const articles: article[] =
+// @ts-ignore
   JSON.parse(localStorage.getItem("articles")) || defaultArticles;
 
 export const reducerArticles = (state = articles, action: any) => {
@@ -34,6 +35,7 @@ export const reducerArticles = (state = articles, action: any) => {
       return cloneState.map((item) => {
         return { ...item, qty: 0 };
       });
+
     default:
       return state;
   }
