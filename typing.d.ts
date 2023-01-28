@@ -12,7 +12,8 @@ export interface article {
     bg3:string,
     alsoLike:mayLike[]
     box:box[],
-    category:string
+    category:string,
+    alt:string
 }
 interface alsoLike{
     img:string,

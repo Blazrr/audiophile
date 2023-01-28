@@ -20,7 +20,7 @@ const Summary = ({ articles,total }: Props) => {
             <div className="flex items-center w-1/5 max-w-[300px] ">
               <img
                 src={item.img}
-                alt=""
+                alt={item.alt}
                 className=" aspect-square bg-[#F1F1F1] p-2 rounded-md w-full h-full  "
               />
               <div className="ml-4 flex flex-col">

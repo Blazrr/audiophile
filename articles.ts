@@ -23,7 +23,8 @@ export const defaultArticles = [
     bg1:"/xx59bg1.svg",
     bg2:"/xx59bg2.svg",
     bg3:"/xx59bg3.svg",
-    category:"/Headphones"
+    category:"/Headphones",
+    alt:"Picture of a XX59 HEADPHONES"
   },
   {
     name: "xx99m1",
@@ -49,7 +50,9 @@ export const defaultArticles = [
     bg1:"/xx99m1bg1.svg",
     bg2:"/xx99m1bg2.svg",
     bg3:"/xx99m1bg3.svg",
-    category:"/Headphones"
+    category:"/Headphones",
+    alt:"Picture of a XX99 MARK I HEADPHONES"
+    
 
     
   },
@@ -78,7 +81,8 @@ export const defaultArticles = [
     bg1:"/xx99m2bg1.svg",
     bg2:"/xx99m2bg2.svg",
     bg3:"/xx99m2bg3.svg",
-    category:"/Headphones"
+    category:"/Headphones",
+    alt:"Picture of a XX99 MARK II HEADPHONES"
 
   },
   {
@@ -106,7 +110,8 @@ export const defaultArticles = [
     bg1:"/zx7bg1.svg",
     bg2:"/zx7bg2.svg",
     bg3:"/zx7bg3.svg",
-    category:"/Speakers"
+    category:"/Speakers",
+    alt:"Picture of a ZX7 SPEAKER"
 
   },
   {
@@ -134,7 +139,8 @@ export const defaultArticles = [
     bg1:"/zx9bg1.svg",
     bg2:"/zx9bg2.svg",
     bg3:"/zx9bg3.svg",
-    category:"/Speakers"
+    category:"/Speakers",
+    alt:"Picture of a ZX9 SPEAKER"
 
   },
   {
@@ -162,7 +168,8 @@ export const defaultArticles = [
     bg1:"/yx1bg1.svg",
     bg2:"/yx1bg2.svg",
     bg3:"/yx1bg3.svg",
-    category:"/Earphones"
+    category:"/Earphones",
+    alt:"Picture of a YX1 WIRELESS EARPHONES"
 
   },
 ];

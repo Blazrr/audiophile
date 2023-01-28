@@ -24,7 +24,7 @@ const HomeHeader = (props: Props) => {
             </div>
 
             <div className='hidden lg:block  '>
-                <img src="/xx99m2.svg" alt="" className='max-h-[500px]' />
+                <img src="/xx99m2.svg" alt="Picture of a XX99 Headset" className='max-h-[500px]' />
             </div>
 
         </div>

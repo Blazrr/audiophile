@@ -17,7 +17,7 @@ const AlsoLike = ({ article }: Props) => {
           return (
             <div key={id} className="md:w-[30%] w-full flex flex-col ">
               <div className="bg-[#F1F1F1] flex justify-center rounded-md items-center p-8 aspect-square   ">
-                <img src={item.img} alt="" className="aspect-square" />
+                <img src={item.img} alt={item.alt} className="aspect-square" />
               </div>
               <h2 className="text-center text-xl mt-2 font-semibold">
                 {item.title}

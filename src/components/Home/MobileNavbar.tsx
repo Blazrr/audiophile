@@ -19,7 +19,7 @@ const MobileNavbar = ({setNavbar}: Props) => {
             <Link to="/Headphones" className='navCard' onClick={() => setNavbar(false)}>
         
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px] flex items '>
-                    <img src="/HeadphoneNavbar.svg" alt="" className='mx-auto' />
+                    <img src="/HeadphoneNavbar.svg" alt="Picture of a headphone" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide '>Headphones</span>
                 <button className='tracking-wider font-semibold text-[#979797] '>Shop</button>
@@ -31,7 +31,7 @@ const MobileNavbar = ({setNavbar}: Props) => {
             <Link to="/Speakers" className='navCard' onClick={() => setNavbar(false)}>
 
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px]'>
-                    <img src="/SpeakerNavbar.svg" alt="" className=' mx-auto' />
+                    <img src="/SpeakerNavbar.svg" alt="Picture of a Speaker" className=' mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide'>Speakers</span>
                 <button className=' font-semibold text-[#979797] tracking-wider'>Shop</button>
@@ -40,7 +40,7 @@ const MobileNavbar = ({setNavbar}: Props) => {
 
             <Link to="/Earphones" className='navCard' onClick={() => setNavbar(false)}>
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px]'>
-                    <img src="/EarphonesNavbar.svg" alt="" className='mx-auto' />
+                    <img src="/EarphonesNavbar.svg" alt="Picture of an Earphones" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide'>Headphones</span>
                 <button className='tracking-wider font-semibold text-[#979797] '>Shop</button>

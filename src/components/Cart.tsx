@@ -55,7 +55,7 @@ const Cart = ({cartFalse}: Props) => {
                   <div className="flex items-center w-full ">
                     <img
                       src={item.img}
-                      alt=""
+                      alt={item.alt}
                       className=" w-1/5 aspect-square bg-[#F1F1F1] p-2 rounded-md "
                     />
                     <div className="ml-4">

@@ -12,7 +12,7 @@ const HomeHeroSpeaker = (props: Props) => {
 
     </div>
     <div className='lg:w-2/5 space-y-8'>
-      <img src="/SpeakerNavbar.svg" alt="" className='mx-auto w-[25%] lg:hidden' />
+      <img src="/SpeakerNavbar.svg" alt="Picture of a speaker" className='mx-auto w-[25%] lg:hidden' />
       <h2 className='text-center font-bold text-4xl lg:text-5xl lg:text-left'>
         ZX9 SPEAKER
       </h2>

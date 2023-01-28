@@ -24,7 +24,7 @@ const Product = ({
       <div className="md:flex items-center justify-center">
         <img
           src={article.img}
-          alt=""
+          alt={article.alt}
           className="md:w-1/2 w-full bg-[#f1f1f1] rounded-lg p-16"
         />
 

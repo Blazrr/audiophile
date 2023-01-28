@@ -12,7 +12,7 @@ const HomeHero = (props: Props) => {
             <Link to="Headphones" className='navCard'>
 
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px] flex  '>
-                    <img src="/HeadphoneNavbar.svg" alt="" className='mx-auto' />
+                    <img src="/HeadphoneNavbar.svg" alt="Picture of a headphone" className='mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide '>Headphones</span>
                 <button className='tracking-wider font-semibold text-[#979797] '>Shop</button>
@@ -22,7 +22,7 @@ const HomeHero = (props: Props) => {
             <Link to="/Speakers" className='navCard'>
 
                 <div className='absolute  drop-shadow-2xl top-[-25%] w-[70%] max-w-[230px]'>
-                    <img src="/SpeakerNavbar.svg" alt="" className=' mx-auto' />
+                    <img src="/SpeakerNavbar.svg" alt="Picture of a Speaker" className=' mx-auto' />
                 </div>
                 <span className='font-semibold tracking-wide'>Speakers</span>
                 <button className=' font-semibold text-[#979797] tracking-wider'>Shop</button>

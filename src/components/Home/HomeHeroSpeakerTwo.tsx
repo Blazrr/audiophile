@@ -15,7 +15,7 @@ const HomeHeroSpeakerTwo = (props: Props) => {
           </Link>
           </div>
           </div>
-          <img src="/HeroSpeaker.svg" alt="" className='hidden lg:block w-[400px]' />
+          <img src="/HeroSpeaker.svg" alt="Picture of a Speaker" className='hidden lg:block w-[400px]' />
           
        
       </div>

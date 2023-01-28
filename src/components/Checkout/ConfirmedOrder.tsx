@@ -25,7 +25,7 @@ const ConfirmedOrder = ({ articles, total }: Props) => {
         <div className=" w-1/2 p-4 ">
           <div>
             <div className="flex justify-between p-4">
-              <img src={articles[0].img} alt="" className="w-1/5" />
+              <img src={articles[0].img} alt={articles[0].alt} className="w-1/5" />
               <div className="flex flex-col">
                 <p>{articles[0].title}</p>
                 <p>{articles[0].price}</p>
