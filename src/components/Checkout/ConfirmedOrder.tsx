@@ -13,7 +13,7 @@ const ConfirmedOrder = ({ articles, total }: Props) => {
   return (
     <div className="absolute left-1/2 transform -translate-x-1/2 top-[20%] z-50 bg-white p-6 flex flex-col space-y-4 rounded-lg ">
       <div className="flex">
-        <p className="bg-orange-300 px-4 py-2  rounded-full">X</p>
+        <p className="bg-orange-300 px-4 py-2  rounded-full">✔</p>
       </div>
       <h2 className="tracking-wider font-semibold text-2xl">
         THANK YOU FOR YOUR ORDER
@@ -46,10 +46,10 @@ const ConfirmedOrder = ({ articles, total }: Props) => {
           <span className="text-white">${total}</span>
         </div>
       </div>
-
+      
       <Link
         to="/"
-        className="px-4 py-2  text-white transition-all border-slate-700 border-[1px] md:mx-auto bg-orange-400 w-full text-center"
+        className="px-4 py-2  text-white transition-all border-slate-700 border-[1px] md:mx-auto bg-orange-400 hover:bg-orange-500 w-full text-center"
         onClick={() => dispatch({ type: "REMOVE_ALL"})}
       >
         BACK TO HOME

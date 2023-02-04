@@ -13,7 +13,6 @@ type Props = {};
 
 const ProductPage = (props: Props) => {
   const name = useParams().article;
-  console.log(name);
 
   const articles = useSelector((store: any) => {
     return store.reducerArticles;
@@ -22,7 +21,6 @@ const ProductPage = (props: Props) => {
   const tmp: article[] = articles.filter((item: article) => item.name == name);
   const article = tmp[0];
   const dispatch = useDispatch();
-  console.log(window.location.pathname) 
   const [count, setCount] = useState(0);
   const decrementCount = () => {
     setCount(count - 1);
@@ -41,10 +39,6 @@ const ProductPage = (props: Props) => {
     dispatch({ type: "ADD_TO_CART", payload: data });
     setCount(0);
   };
-
-  console.log(article.category);
-  console.log(article);
-  console.log(window.location.pathname)
 
   return (
     <>

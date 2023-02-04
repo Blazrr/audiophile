@@ -17,7 +17,7 @@ const Earphones = (props: Props) => {
     <>
         <Header pageTitle='Earphones'/>
         <div className='max-w-[1300px] mx-auto'>
-        <SeeProduct title={articles[5].title} description={articles[5].description} img={articles[5].img} link="/Earphones/yx1" direction='md:flex-row'    />
+        <SeeProduct title={articles[5].title} description={articles[5].description} img={articles[5].img} alt={articles[5].alt} link="/Earphones/yx1" direction='md:flex-row'    />
         <HomeHero/> 
         <HomeHeroFour/>
         </div>

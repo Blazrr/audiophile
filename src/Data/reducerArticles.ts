@@ -1,11 +1,9 @@
-import { useEffect } from "react";
-import { defaultArticles } from "../../articles";
 import _ from "lodash";
 import { article } from "../../typing";
 
 const articles: article[] =
 // @ts-ignore
-  JSON.parse(localStorage.getItem("articles")) || defaultArticles;
+  JSON.parse(localStorage.getItem("articles")) || [];
 
 export const reducerArticles = (state = articles, action: any) => {
   const cloneState = _.cloneDeep(state);
@@ -35,7 +33,10 @@ export const reducerArticles = (state = articles, action: any) => {
       return cloneState.map((item) => {
         return { ...item, qty: 0 };
       });
-
+    case "FETCH_ARTICLES":
+      return action.payload.data;
+      
+      
     default:
       return state;
   }

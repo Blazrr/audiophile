@@ -7,14 +7,15 @@ type Props = {
   img: string;
   link: string;
   direction: string;
+  alt:string;
 };
 
-const SeeProduct = ({ title, description, img, link, direction }: Props) => {
+const SeeProduct = ({ title, description, img,alt, link, direction }: Props) => {
   return (
     <div className={`flex flex-col w-4/5 mx-auto ${direction}  md:space-x-8 mt-16 `}>
       <img
         src={img}
-        alt=""
+        alt={alt}
         className=" bg-[#f0f0f0] rounded-lg  md:w-1/2 w-full p-4 md:p-8 object-scale-down "
       />
       <div className="flex flex-col items-center justify-center md:w-1/2 w-full p-10">

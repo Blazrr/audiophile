@@ -21,7 +21,6 @@ const CheckoutPage = ({}: Props) => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data: any) => {
-    console.log(data);
     setOrderConfirned(true);
   };
   const [orderConfirmed, setOrderConfirned] = useState(false);

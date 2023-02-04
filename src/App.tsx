@@ -6,9 +6,10 @@ import Home from "./pages/Home";
 import Speakers from "./pages/Speakers";
 import { configureStore } from "@reduxjs/toolkit";
 import { reducerArticles } from "./Data/reducerArticles";
-import { Provider, useSelector } from "react-redux";
+import { Provider, useDispatch, useSelector } from "react-redux";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
+import { useEffect } from "react";
 
 
 
@@ -16,6 +17,7 @@ function App() {
   const store = configureStore({
     reducer: { reducerArticles },
   });
+
   return (
     <>
       <Provider store={store}>
