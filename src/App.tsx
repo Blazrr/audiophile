@@ -10,6 +10,7 @@ import { Provider, useDispatch, useSelector } from "react-redux";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import { useEffect } from "react";
+import NotFound from "./pages/NotFound";
 
 
 
@@ -17,6 +18,8 @@ function App() {
   const store = configureStore({
     reducer: { reducerArticles },
   });
+
+  
 
   return (
     <>
@@ -29,6 +32,8 @@ function App() {
           <Route element={<Earphones />} path="/Earphones" />
           <Route path='/:pages/:article' element={<ProductPage />} />
           <Route path="/Checkout" element={<CheckoutPage/>} />
+          <Route path='*' element={<NotFound />} />
+
         </Routes>
       </Provider>
     </>
