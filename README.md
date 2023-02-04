@@ -3,4 +3,4 @@ You can run this app by cloning this repository run `npm install` or `yarn insta
 Then `npm run dev` or `yarn run dev`
 
 
-Uou can also find the project at this URL : https://delicate-banoffee-9c017c.netlify.app/
+Uou can also find the project at this URL : https://audiophile-pied.vercel.app/
