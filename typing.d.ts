@@ -13,7 +13,8 @@ export interface article {
     alsoLike:mayLike[]
     box:box[],
     category:string,
-    alt:string
+    alt:string,
+    itemId:string
 }
 interface alsoLike{
     img:string,

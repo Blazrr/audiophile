@@ -6,6 +6,7 @@ import Billing from "../components/Checkout/Billing";
 import ConfirmedOrder from "../components/Checkout/ConfirmedOrder";
 import Summary from "../components/Checkout/Summary";
 import Footer from "../components/Footer";
+import { checkout } from "../../hooks/useCheckout";
 
 type Props = {};
 
@@ -21,7 +22,18 @@ const CheckoutPage = ({}: Props) => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data: any) => {
-    setOrderConfirned(true);
+    
+      checkout({
+        lineItems: articles.map((item) => {
+          if (item.qty > 0) {
+            return {
+              price: `${item.itemId}`,
+              quantity: item.qty,
+            };
+          }
+        }),
+      });
+
   };
   const [orderConfirmed, setOrderConfirned] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -43,8 +55,7 @@ const CheckoutPage = ({}: Props) => {
     <>
       {orderConfirmed && (
         <>
-          <div
-            className="fixed w-screen bg-slate-300 bg-opacity-25 h-full top-0 overflow-auto  z-20 justify-center  " ></div>
+          <div className="fixed w-screen bg-slate-300 bg-opacity-25 h-full top-0 overflow-auto  z-20 justify-center  "></div>
 
           <ConfirmedOrder articles={articles} total={totalPrice} />
         </>

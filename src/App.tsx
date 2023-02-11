@@ -11,6 +11,7 @@ import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import { useEffect } from "react";
 import NotFound from "./pages/NotFound";
+import OrderComplete from "./pages/OrderComplete";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route element={<HeadPhones />} path="/Headphones" />
           <Route element={<Speakers />} path="/Speakers" />
           <Route element={<Earphones />} path="/Earphones" />
+          <Route element={<OrderComplete/>} path="/OrderComplete" />   
           <Route path='/:pages/:article' element={<ProductPage />} />
           <Route path="/Checkout" element={<CheckoutPage/>} />
           <Route path='*' element={<NotFound />} />
