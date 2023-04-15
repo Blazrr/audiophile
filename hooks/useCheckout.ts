@@ -9,7 +9,6 @@ export async function checkout({ lineItems }: Props) {
 
   const getStripe = () => {
     if (!stripePromise) {
-      //@ts-ignore
       stripePromise = loadStripe(import.meta.env.VITE_STRIPE_API_KEY);
     }
 
@@ -21,9 +20,7 @@ export async function checkout({ lineItems }: Props) {
     mode: "payment",
     lineItems,
     successUrl: `${window.location.origin}/OrderComplete`,
-
     cancelUrl: window.location.origin,
-    
   });
 }
 

@@ -51,7 +51,7 @@ const Summary = ({ articles,total }: Props) => {
       </div>
       <div className="flex justify-between">
         <p>GRAND TOTAL</p>
-        <p>$ 5,4446</p>
+        <p>$ {total + 50}</p>
       </div>
       <button type="submit" className='px-4 flex py-2 hover:bg-transparent text-white transition-all hover:text-black border-slate-700 border-[1px] md:mx-auto bg-[#D87D4A]' >
           CONTINUE & PAY
